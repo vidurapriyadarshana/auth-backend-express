@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { ApiError } from '../utils/ApiError';
 import { NODE_ENV } from '../config/env.config';
-import mongoose from 'mongoose'; // <-- 1. IMPORT MONGOOSE
+import mongoose from 'mongoose'; 
 
 export const errorHandler = (
   err: Error, 
@@ -31,7 +31,6 @@ export const errorHandler = (
       message: error.message,
     }));
   }
-  // --- END OF NEW BLOCK ---
   else {
     // Log any other unexpected errors
     console.error('UNHANDLED ERROR:', err);

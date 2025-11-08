@@ -7,7 +7,7 @@ const levels = {
   error: 0,
   warn: 1,
   info: 2,
-  http: 3, // For Morgan (HTTP requests)
+  http: 3, 
   debug: 4,
 };
 
@@ -48,9 +48,8 @@ const logFormat = winston.format.combine(
 
 // Define the "transports" (where the logs go)
 const transports = [
-  // 1. Log to the console
   new winston.transports.Console({
-    level: level(), // Log 'debug' and above in dev, 'warn' and above in prod
+    level: level(), 
     handleExceptions: true,
   }),
   

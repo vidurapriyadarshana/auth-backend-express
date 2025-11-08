@@ -16,20 +16,3 @@ export const getProfile = async (req: Request, res: Response, next: NextFunction
     next(error);
   }
 };
-
-/**
- * Example Admin-only endpoint logic
- */
-export const getAdminDashboard = (req: Request, res: Response) => {
-  res.json({ message: `Welcome to the admin dashboard, user ${req.user?.id}` }); 
-};
-
-/**
- * Example Doctor/Therapist endpoint logic
- */
-export const getPatientList = (req: Request, res: Response) => {
-  res.json({ 
-    message: 'Patient list retrieved.',
-    accessorRoles: req.user?.roles 
-  });
-};

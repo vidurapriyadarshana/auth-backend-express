@@ -1,6 +1,5 @@
 import { config } from "dotenv";
 
-// Load the correct .env file
 config({
     path: `.env.${process.env.NODE_ENV || 'development'}.local`
 });

@@ -1,7 +1,5 @@
-// Define the allowed roles as a type
 export type UserRole = 'user' | 'admin' | 'therapist' | 'doctor';
 
-// Export an object for easy access (e.g., ROLES.Admin)
 export const ROLES = {
   User: 'user' as UserRole,
   Admin: 'admin' as UserRole,

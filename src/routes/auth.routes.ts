@@ -23,4 +23,8 @@ router.get('/google/callback',
 router.post('/refresh-token', authController.refresh);
 router.post('/logout', authController.logout);
 
+// Password Reset
+router.post('/forgot-password', authController.forgotPassword);
+router.post('/reset-password/:token', authController.resetPassword);
+
 export default router;

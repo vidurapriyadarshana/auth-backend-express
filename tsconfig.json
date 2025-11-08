@@ -12,8 +12,8 @@
     
   },
   "include": [
-    "src/**/*",  // This includes all .ts files in src
-    "src/types/**/*.d.ts" // This explicitly includes your type definitions
+    "src/**/*",  
+    "src/types/**/*.d.ts"
   ],
   "exclude": ["node_modules", "dist"]
 }
